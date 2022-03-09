@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1cd4f8fa9be54c169aa1979e0906873d" Name="Diagram1">
+        <EntityTypeShape EntityType="DBModel.Appointment" Width="1.5" PointX="8.25" PointY="3.875" />
+        <EntityTypeShape EntityType="DBModel.AvailableSlab" Width="1.5" PointX="8.25" PointY="11.625" />
+        <EntityTypeShape EntityType="DBModel.Disease" Width="1.5" PointX="6" PointY="3.125" />
+        <EntityTypeShape EntityType="DBModel.Doctor" Width="1.5" PointX="6" PointY="5.875" />
+        <EntityTypeShape EntityType="DBModel.EmailTemplete" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DBModel.Enquiry" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DBModel.Offday" Width="1.5" PointX="8.25" PointY="8.875" />
+        <EntityTypeShape EntityType="DBModel.RoleMaster" Width="1.5" PointX="0.75" PointY="8.125" />
+        <EntityTypeShape EntityType="DBModel.Speciality" Width="1.5" PointX="3.75" PointY="4.125" />
+        <EntityTypeShape EntityType="DBModel.UserMaster" Width="1.5" PointX="3" PointY="7" />
+        <AssociationConnector Association="DBModel.FK_Appointment_Doctor" />
+        <AssociationConnector Association="DBModel.FK_AvailableSlab_Doctor" />
+        <AssociationConnector Association="DBModel.FK_Disease_Speciality" />
+        <AssociationConnector Association="DBModel.FK_Doctor_RoleMaster" />
+        <AssociationConnector Association="DBModel.FK_Doctor_Speciality" />
+        <AssociationConnector Association="DBModel.FK_Offday_Doctor" />
+        <AssociationConnector Association="DBModel.FK_UserMaster_RoleMaster" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
